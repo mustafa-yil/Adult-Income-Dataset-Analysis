@@ -38,14 +38,6 @@ The **Adult Income Dataset** is retrieved from the UCI Machine Learning Reposito
 4. **Feature Engineering:** Apply preprocessing transformations using Scikit-learn pipelines.
 5. **Data Visualization:** Generate histograms and summary statistics.
 
-## License
-
-This project is for educational purposes and follows open-source principles.
-
-## Author
-
-**Mustafa Yildirim**
-
 ## Acknowledgments
 
 - UCI Machine Learning Repository for the dataset.
