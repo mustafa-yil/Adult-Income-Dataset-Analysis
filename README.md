@@ -19,7 +19,6 @@ This project focuses on data preprocessing and analysis of the **Adult Income Da
 - NumPy
 - Scikit-learn
 - Matplotlib
-- Seaborn
 
 ## Installation
 
