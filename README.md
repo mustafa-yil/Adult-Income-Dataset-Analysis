@@ -30,35 +30,6 @@ pip install pandas numpy scikit-learn matplotlib seaborn ucimlrepo
 
 The **Adult Income Dataset** is retrieved from the UCI Machine Learning Repository using `ucimlrepo`. It contains demographic and economic attributes for individuals, used to predict income level.
 
-## Usage
-
-```python
-# Import libraries
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.pipeline import make_pipeline
-from sklearn.preprocessing import OneHotEncoder, StandardScaler
-from sklearn.impute import SimpleImputer
-from ucimlrepo import fetch_ucirepo
-
-# Fetch dataset
-adult = fetch_ucirepo(id=2)
-X = adult.data.features
-y = adult.data.targets
-
-# Handling missing values
-X = X.replace('?', np.nan)
-
-# Exploratory Data Analysis
-X.hist(figsize=(24, 16))
-plt.show()
-
-# Preprocessing Pipelines
-num_pipeline = make_pipeline(SimpleImputer(strategy='mean'), StandardScaler())
-```
-
 ## Project Tasks
 
 1. **Data Import:** Fetch dataset using `ucimlrepo`.
